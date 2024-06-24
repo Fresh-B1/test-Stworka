@@ -160,7 +160,7 @@ body {
   color: var(--text-content-color);
 }
 
-.btn-container {
+.btn-open-checklist {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -172,26 +172,21 @@ body {
   padding: 10px 32px;
   gap: 10px;
   background-color: var(--background-btn-color);
+  border: 0;
   cursor: pointer;
 }
 
-.btn-container:hover {
+.btn-open-checklist:hover {
   background-color: #c2d6eb;
 }
 
-.btn-container:active {
+.btn-open-checklist:active {
   background-color: #0c5eaf;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-
-.btn-open-checklist {
-  border: 0;
-  background: none;
-  cursor: pointer;
-}
-
-.btn-open-checklist p {
+.btn-open-checklist span {
+  display: inline-block;
   font-family: var(--font-family-basic);
   font-weight: 400;
   font-size: 14px;
@@ -199,4 +194,5 @@ body {
   color: var(--text-btn-color);
   width: 120px;
   height: 20px;
+  white-space: nowrap;
 }
